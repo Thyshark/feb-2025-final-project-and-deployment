@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenwood School Supplies | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Greenwood School Supplies Logo">
+                <h1>Greenwood School Supplies</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="cart-icon"><a href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Quality School Supplies Since 1995</h2>
+                <p>Everything students need for academic success</p>
+                <a href="products.html" class="btn">Shop Now</a>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <div class="container">
+                <h2>Featured Products</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="notebook-icon.png" alt="Premium Notebook">
+                        <h3>Premium Notebook</h3>
+                        <p class="price">$12.99</p>
+                        <button class="add-to-cart" data-id="1">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="pen-icon.png" alt="Gel Pen Set">
+                        <h3>Gel Pen Set</h3>
+                        <p class="price">$8.99</p>
+                        <button class="add-to-cart" data-id="2">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="bag-icon1.png" alt="School Backpack">
+                        <h3>School Backpack</h3>
+                        <p class="price">$29.99</p>
+                        <button class="add-to-cart" data-id="3">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="calculator-icon.png" alt="Scientific Calculator">
+                        <h3>Scientific Calculator</h3>
+                        <p class="price">$19.99</p>
+                        <button class="add-to-cart" data-id="4">Add to Cart</button>
+                    </div>
+                </div>
+                <a href="products.html" class="btn view-all">View All Products</a>
+            </div>
+        </section>
+
+        <section class="announcements">
+            <div class="container">
+                <h2>Special Offers</h2>
+                <div class="announcement-slider">
+                    <div class="announcement active">
+                        <h3>Back to School Sale</h3>
+                        <p>20% off all items until August 31st. Use code SCHOOL20 at checkout.</p>
+                    </div>
+                    <div class="announcement">
+                        <h3>Free Shipping</h3>
+                        <p>Free shipping on orders over $50.</p>
+                    </div>
+                    <div class="announcement">
+                        <h3>Teacher Discount</h3>
+                        <p>Teachers get 15% off with school ID.</p>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="prev-btn">←</button>
+                    <button class="next-btn">→</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-links">
+            <div class="container">
+                <h2>Shop Categories</h2>
+                <div class="links-grid">
+                    <a href="products.html?category=writing" class="link-card">
+                        <img src="pen-icon.png" alt="Writing Supplies">
+                        <h3>Writing Supplies</h3>
+                    </a>
+                    <a href="products.html?category=notebooks" class="link-card">
+                        <img src="notebook-icon.png" alt="Notebooks">
+                        <h3>Notebooks</h3>
+                    </a>
+                    <a href="products.html?category=backpacks" class="link-card">
+                        <img src="bag-icon.png" alt="Backpacks">
+                        <h3>Backpacks</h3>
+                    </a>
+                    <a href="products.html?category=art" class="link-card">
+                        <img src="art-icon.png" alt="Art Supplies">
+                        <h3>Art Supplies</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Greenwood School Supplies. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

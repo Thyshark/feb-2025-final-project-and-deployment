@@ -38,7 +38,7 @@
         transform: rotate(-45deg) translate(7px, -6px);
     }
 
-    .hero h2, .about-hero h2, .contact-hero h2 {
+    .hero h2, .cart-hero h2 {
         font-size: 2rem;
     }
 
@@ -46,10 +46,26 @@
         font-size: 1rem;
     }
 
-    footer .container {
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .cart-content {
         flex-direction: column;
-        gap: 20px;
-        text-align: center;
+    }
+
+    .cart-summary {
+        position: static;
+        margin-top: 30px;
+    }
+
+    .filter-options {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .filter-options select {
+        width: 100%;
     }
 }
 
@@ -63,19 +79,185 @@
         font-size: 1.2rem;
     }
 
-    .hero, .about-hero, .contact-hero {
+    .hero, .cart-hero {
         padding: 60px 0;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
     }
 
     .announcement-slider {
         height: 250px;
     }
 
+    .cart-item-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-item-img {
+        margin-bottom: 10px;
+    }
+
+    .links-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .faculty-grid, .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cart-table th, .cart-table td {
+        padding: 10px 5px;
+        font-size: 0.9rem;
+    }
+
+    .quantity-control {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .quantity-btn {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* Tablet Screens */
+@media (min-width: 577px) and (max-width: 992px) {
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .links-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .cart-content {
+        flex-direction: column;
+    }
+
+    .cart-summary {
+        position: static;
+        margin-top: 30px;
+    }
+}
+
+/* Large Screens Adjustments */
+@media (min-width: 1200px) {
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+}
+
+/* High DPI Displays */
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+    .logo img, 
+    .product-card img, 
+    .link-card img, 
+    .social-links img {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}
+
+/* Print Styles */
+@media print {
+    header, footer, nav, .mobile-menu, .slider-controls, .add-to-cart {
+        display: none !important;
+    }
+
+    body {
+        background: none;
+        color: #000;
+        font-size: 12pt;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .product-card {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+}
+
+/* Contact Page Responsive */
+@media (max-width: 768px) {
+    .contact-hero, .about-hero {
+        padding: 80px 0;
+    }
+    
+    .contact-hero h2, .about-hero h2 {
+        font-size: 2rem;
+    }
+    
+    .contact-form {
+        padding: 20px;
+    }
+    
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .info-card, .value-card, .team-member {
+        padding: 20px;
+    }
+    
+    .team-member img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* About Page Responsive */
+@media (max-width: 768px) {
     .timeline {
         padding-left: 20px;
     }
+    
+    .timeline-item::before {
+        left: -6px;
+        top: 25px;
+        width: 16px;
+        height: 16px;
+    }
+    
+    .testimonial {
+        padding: 20px;
+    }
+    
+    .testimonial-slider {
+        height: 250px;
+    }
+}
 
-    .contact-form {
-        width: 100%;
+@media (max-width: 576px) {
+    .contact-hero, .about-hero {
+        padding: 60px 0;
+    }
+    
+    .contact-hero h2, .about-hero h2 {
+        font-size: 1.8rem;
+    }
+    
+    .contact-hero p, .about-hero p {
+        font-size: 1rem;
+    }
+    
+    .info-grid, .values-grid, .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline-item {
+        padding: 20px 15px 20px 25px;
+    }
+    
+    .testimonial-slider {
+        height: 300px;
     }
 }

@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greenwood High School | Contact</title>
+    <title>Greenwood School Supplies | Contact Us</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <img src="logo.jpg" alt="Greenwood High School Logo">
-                <h1>Greenwood High School</h1>
+                <img src="logo.jpg" alt="Greenwood School Supplies Logo">
+                <h1>Greenwood School Supplies</h1>
             </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html" class="active">Contact</a></li>
+                    <li class="cart-icon"><a href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
                 </ul>
             </nav>
             <div class="mobile-menu">
@@ -32,7 +35,8 @@
     <main>
         <section class="contact-hero">
             <div class="container">
-                <h2>Contact Us</h2>
+                <h2>Contact Our Team</h2>
+                <p>Have questions about our products or need assistance with your order? We're here to help!</p>
             </div>
         </section>
 
@@ -41,23 +45,25 @@
                 <div class="info-grid">
                     <div class="info-card">
                         <img src="location-icon.png" alt="Location">
-                        <h3>Address</h3>
+                        <h3>Store Location</h3>
                         <p>123 Education Lane<br>Greenwood, CA 90210</p>
                     </div>
                     <div class="info-card">
                         <img src="phone-icon.png" alt="Phone">
-                        <h3>Phone</h3>
+                        <h3>Customer Service</h3>
                         <p>(555) 123-4567</p>
+                        <p>Mon-Fri: 9am-6pm</p>
                     </div>
                     <div class="info-card">
                         <img src="email-icon.png" alt="Email">
-                        <h3>Email</h3>
-                        <p>info@greenwoodhigh.edu</p>
+                        <h3>Email Us</h3>
+                        <p>support@greenwoodsupplies.com</p>
+                        <p>orders@greenwoodsupplies.com</p>
                     </div>
                     <div class="info-card">
                         <img src="hour-icon.png" alt="Hours">
-                        <h3>Office Hours</h3>
-                        <p>Monday-Friday<br>8:00 AM - 4:00 PM</p>
+                        <h3>Business Hours</h3>
+                        <p>Monday-Friday: 9am-6pm<br>Saturday: 10am-4pm<br>Sunday: Closed</p>
                     </div>
                 </div>
             </div>
@@ -68,12 +74,12 @@
                 <h2>Send Us a Message</h2>
                 <form id="contact-form" class="contact-form">
                     <div class="form-group">
-                        <label for="name">Name:</label>
+                        <label for="name">Full Name:</label>
                         <input type="text" id="name" name="name" required>
                         <span class="error-message" id="name-error"></span>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email:</label>
+                        <label for="email">Email Address:</label>
                         <input type="email" id="email" name="email" required>
                         <span class="error-message" id="email-error"></span>
                     </div>
@@ -81,27 +87,57 @@
                         <label for="subject">Subject:</label>
                         <select id="subject" name="subject">
                             <option value="general">General Inquiry</option>
-                            <option value="admissions">Admissions</option>
-                            <option value="feedback">Feedback</option>
+                            <option value="order">Order Support</option>
+                            <option value="wholesale">Wholesale Inquiry</option>
+                            <option value="returns">Returns & Exchanges</option>
                             <option value="other">Other</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="message">Message:</label>
+                        <label for="order-number">Order Number (if applicable):</label>
+                        <input type="text" id="order-number" name="order-number">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message:</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                         <span class="error-message" id="message-error"></span>
                     </div>
                     <button type="submit" class="btn">Send Message</button>
                 </form>
                 <div id="form-success" class="form-success hidden">
-                    <p>Thank you for your message! We'll get back to you soon.</p>
+                    <p>Thank you for your message! Our team will respond within 24 hours.</p>
+                    <a href="index.html" class="btn">Continue Shopping</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>What are your shipping options?</h3>
+                        <p>We offer standard (3-5 business days) and express (1-2 business days) shipping. Free shipping on orders over $50.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How can I track my order?</h3>
+                        <p>You'll receive a tracking number via email once your order ships. You can also check order status in your account.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What is your return policy?</h3>
+                        <p>Unopened items can be returned within 30 days for a full refund. Please contact us for a return authorization.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Do you offer bulk discounts?</h3>
+                        <p>Yes! Contact our wholesale team for pricing on bulk orders for schools and organizations.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="map">
             <div class="container">
-                <h2>Find Us</h2>
+                <h2>Visit Our Store</h2>
                 <div class="map-container">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215373510421!2d-73.987844924164!3d40.74844097138975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjQiTiA3M8KwNTknMTQuMiJX!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
@@ -111,7 +147,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; <span id="current-year"></span> Greenwood High School. All rights reserved.</p>
+            <p>&copy; <span id="current-year"></span> Greenwood School Supplies. All rights reserved.</p>
             <div class="social-links">
                 <a href="#"><img src="facebook.png" alt="Facebook"></a>
                 <a href="#"><img src="twitter.png" alt="Twitter"></a>
@@ -122,5 +158,6 @@
 
     <script src="main.js"></script>
     <script src="form-validation.js"></script>
+    <script src="cart.js"></script>
 </body>
 </html>

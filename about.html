@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greenwood High School | About</title>
+    <title>Greenwood School Supplies | About Us</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <img src="logo.jpg" alt="Greenwood High School Logo">
-                <h1>Greenwood High School</h1>
+                <img src="logo.jpg" alt="Greenwood School Supplies Logo">
+                <h1>Greenwood School Supplies</h1>
             </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
                     <li><a href="about.html" class="active">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li class="cart-icon"><a href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
                 </ul>
             </nav>
             <div class="mobile-menu">
@@ -32,61 +35,127 @@
     <main>
         <section class="about-hero">
             <div class="container">
-                <h2>About Our School</h2>
+                <h2>Our Story</h2>
+                <p>Providing quality school supplies to students and educators since 1995</p>
             </div>
         </section>
 
         <section class="mission">
             <div class="container">
                 <h2>Our Mission</h2>
-                <p>To provide a challenging and supportive learning environment that fosters academic excellence, personal growth, and social responsibility.</p>
+                <p>To equip students and educators with high-quality, affordable supplies that enhance learning and creativity while maintaining our commitment to sustainability and community support.</p>
             </div>
         </section>
 
         <section class="history">
             <div class="container">
-                <h2>Our History</h2>
-                <p>Founded in 1995, Greenwood High School has been serving the community for over 25 years. What began as a small neighborhood school has grown into a comprehensive educational institution serving over 1,200 students annually.</p>
+                <h2>Our Journey</h2>
+                <p>What began as a small neighborhood school supply shop has grown into a trusted provider for schools and families throughout the region.</p>
                 <div class="timeline">
                     <div class="timeline-item">
                         <h3>1995</h3>
-                        <p>School founded with 150 students</p>
+                        <p>Founded as a small retail store serving local schools</p>
                     </div>
                     <div class="timeline-item">
-                        <h3>2002</h3>
-                        <p>Science wing added to campus</p>
+                        <h3>2005</h3>
+                        <p>Launched our first e-commerce website</p>
                     </div>
                     <div class="timeline-item">
-                        <h3>2010</h3>
-                        <p>Awarded Blue Ribbon School status</p>
+                        <h3>2012</h3>
+                        <p>Became the official supplier for 15 school districts</p>
                     </div>
                     <div class="timeline-item">
                         <h3>2020</h3>
-                        <p>Completed major campus renovation</p>
+                        <p>Expanded our product line to include eco-friendly options</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>2023</h3>
+                        <p>Opened our second retail location and warehouse</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="faculty">
+        <section class="values">
             <div class="container">
-                <h2>Meet Our Faculty</h2>
-                <div class="faculty-grid">
-                    <div class="faculty-member">
-                        <img src="principal.png" alt="Principal">
-                        <h3>Dr. Sarah Johnson</h3>
-                        <p>Principal</p>
+                <h2>Our Values</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <img src="quality-icon.png" alt="Quality">
+                        <h3>Quality Products</h3>
+                        <p>We carefully select durable, reliable supplies that withstand daily classroom use.</p>
                     </div>
-                    <div class="faculty-member">
-                        <img src="teacher1.png" alt="Teacher">
-                        <h3>Mr. David Wilson</h3>
-                        <p>Math Department Head</p>
+                    <div class="value-card">
+                        <img src="eco-icon.png" alt="Eco-Friendly">
+                        <h3>Eco-Friendly</h3>
+                        <p>30% of our products are now sustainable, with a goal of 50% by 2025.</p>
                     </div>
-                    <div class="faculty-member">
-                        <img src="teacher2.png" alt="Teacher">
-                        <h3>Ms. Emily Chen</h3>
-                        <p>Science Teacher</p>
+                    <div class="value-card">
+                        <img src="community-icon.png" alt="Community">
+                        <h3>Community Support</h3>
+                        <p>We donate 5% of profits to local school programs each year.</p>
                     </div>
+                    <div class="value-card">
+                        <img src="price-icon.png" alt="Affordable">
+                        <h3>Affordable Prices</h3>
+                        <p>Special educator discounts and bulk pricing for schools.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team">
+            <div class="container">
+                <h2>Meet Our Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="principal.png" alt="Sarah Johnson">
+                        <h3>Sarah Johnson</h3>
+                        <p class="title">Founder & CEO</p>
+                        <p>Former teacher with 20+ years in education</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="teacher1.png" alt="David Wilson">
+                        <h3>David Wilson</h3>
+                        <p class="title">Operations Manager</p>
+                        <p>Ensures fast, accurate order fulfillment</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="teacher2.png" alt="Emily Chen">
+                        <h3>Emily Chen</h3>
+                        <p class="title">Product Specialist</p>
+                        <p>Tests and selects all products we carry</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="support-icon.png" alt="Michael Brown">
+                        <h3>Michael Brown</h3>
+                        <p class="title">Customer Support</p>
+                        <p>Available 7 days a week to assist you</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <h2>What Our Customers Say</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial active">
+                        <p>"Greenwood Supplies has been our go-to for classroom materials for years. Their bulk pricing helps our school stay within budget."</p>
+                        <p class="author">- Mrs. Rodriguez, 5th Grade Teacher</p>
+                    </div>
+                    <div class="testimonial">
+                        <p>"I appreciate their eco-friendly product options. My students notice and care about sustainability too!"</p>
+                        <p class="author">- Mr. Thompson, High School Science</p>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Fast shipping and great customer service. My order arrived exactly when promised."</p>
+                        <p class="author">- Jessica S., Homeschool Parent</p>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="prev-btn">←</button>
+                    <button class="next-btn">→</button>
                 </div>
             </div>
         </section>
@@ -94,7 +163,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; <span id="current-year"></span> Greenwood High School. All rights reserved.</p>
+            <p>&copy; <span id="current-year"></span> Greenwood School Supplies. All rights reserved.</p>
             <div class="social-links">
                 <a href="#"><img src="facebook.png" alt="Facebook"></a>
                 <a href="#"><img src="twitter.png" alt="Twitter"></a>
@@ -104,5 +173,6 @@
     </footer>
 
     <script src="main.js"></script>
+    <script src="cart.js"></script>
 </body>
 </html>
